@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Google Login Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+        }
+
+        .google-btn {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff; /* Button is white */
+            color: #4285F4; /* Google Blue text */
+            padding: 10px 20px;
+            border: 2px solid #4285F4; /* Border to match Google colors */
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .google-btn:hover {
+            background-color: #f4f4f9; /* Slightly darker white on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+        }
+
+        .google-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .google-btn span {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<a href="/oauth2/authorization/google" class="google-btn">
+    <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo">
+    <span>Login with Google</span>
+</a>
+
+</body>
+</html>
