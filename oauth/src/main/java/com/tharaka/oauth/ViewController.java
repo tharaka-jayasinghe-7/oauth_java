@@ -13,6 +13,7 @@ public class ViewController {
         model.addAttribute("name", token.getPrincipal().getAttribute("name"));
         model.addAttribute("email", token.getPrincipal().getAttribute("email"));
         model.addAttribute("photo", token.getPrincipal().getAttribute("picture"));
+        model.addAttribute("first_name", token.getPrincipal().getAttribute("given_name"));
         return "user_profile";
     }
     @GetMapping("/login")
